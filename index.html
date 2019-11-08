@@ -346,7 +346,42 @@
                 <!-- Card Body -->
                 <div class="card-body">
                   <div class="chart-area">
-                    <canvas id="myAreaChart"></canvas>
+                    <canvas id="myAreaChart">      <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+  </head>
+  <body>
+    <div class="ct-chart ct-golden-section"></div>
+    <script>
+var data = {
+  labels: ['Akami-Uapishkᵁ-KakKasuak-Mealy Mountains(Reserve)', 'Aulavik', 'Auyuittuq', 'Banff‡', 'Bruce Peninsula', 'Cape Breton Highlands', 'Elk Island', 'Forillon', 'Fundy', 'Georgian Bay Islands', 'Glacier', 'Grasslands', 'Gros Morne‡', 'Gulf Islands(Reserve)', 'Gwaii Haanas‡[a](Reserve)', 'Ivvavik[b]', 'Jasper‡', 'Kejimkujik', 'Kluane‡[c](two units: a Park and a Reserve)', 'Kootenay‡', 'Kouchibouguac', 'La Mauricie', 'Mingan Archipelago(Reserve)', 'Mount Revelstoke', "Nááts'ihch'oh(Reserve)", 'Nahanni‡(Reserve)', 'Pacific Rim(Reserve)', 'Point Pelee', 'Prince Albert', 'Prince Edward Island', 'Pukaskwa', 'Qausuittuq', 'Quttinirpaaq[e]', 'Riding Mountain', 'Rouge(Urban)', 'Sable Island(Reserve)', 'Sirmilik', 'Terra Nova', 'Thaidene Nëné(Reserve)', 'Thousand Islands', 'Torngat Mountains', 'Tuktut Nogait', 'Ukkusiksalik', 'Vuntut', 'Wapusk', 'Waterton Lakes‡[f]', 'Wood Buffalo‡', 'Yoho‡'],
+  series: [
+    [10700, 12200, 19089, 6641, 125, 948, 194, 240, 206, 14, 1349, 730, 1805, 37, 1474, 9750, 11228, 404, 21980, 1406, 239, 536, 151, 262, 4850, 30000, 510, 15, 3875, 27, 1878, 11008, 37775, 2968, 79.1, 30, 22200, 399, 14000, 24, 9700, 18181, 20880, 4345, 11475, 505, 44972, 1313],
+  ]
+};
+var options = {
+  width: 300,
+  height: 200,
+  showArea: true,
+   axisX: {
+    showLabel: true,
+    showGrid: true
+  },
+   axisY: {
+    showLabel: true,
+    showGrid: true
+  },
+};
+
+new Chartist.Bar('.ct-chart', data, options);
+
+
+
+
+
+    </script>
+  </body>
+</canvas>
                   </div>
                 </div>
               </div>
@@ -382,7 +417,7 @@ As of 2019 there are 38 National Parks, nine National Park Reserves, and one Nat
                   <div class="text-center">
                     <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src="img/moose.jpg" alt="">
                   <p class="card-text"> The goal of Canada's national parks system, in addition to representing and protecting examples of the country's geographic heritage, is to preserve its natural heritage for future generations by encouraging public understanding, appreciation and enjoyment of nature.</p>
-                  
+
 
                   <a target="_blank" rel="nofollow" href=</a>
                 </div>
